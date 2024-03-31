@@ -1,4 +1,7 @@
 import my_functions
 
 nTimes = int(input('how many:'))
-print(my_functions.fibonacci(nTimes))
+try:
+    print(my_functions.fibonacci(nTimes))
+except ValueError:
+    print("value error")
